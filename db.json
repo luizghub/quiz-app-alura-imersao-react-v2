@@ -55,7 +55,8 @@
       "contrastTextLight": "#f8f8ff",
       "contrastTextDark": "#242124",
       "wrong": "#cc3333",
-      "success": "#0BDA51"
+      "success": "#0BDA51",
+      "disabled": "#5218fa"
     },
     "borderRadius": "4px"
   }
