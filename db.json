@@ -1,12 +1,13 @@
 {
   "bg": "https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  "imgDefault": "https://placehold.it/400x400",
   "title": "Quiz JavaScript #AluraQuiz",
   "description": "Um quiz rápido sobre o mundo do JavaScript",
   "questions": [
     {
       "image": "https://media.giphy.com/media/j5P0DQIOf4PonLi55G/giphy.gif",
       "title": "Qual a diferença entre = , == e === ?",
-      "description": "Pergunta fácil em!",
+      "description": "Pergunta fácil, ein!",
       "answer": 1,
       "alternatives": [
         "São a mesma coisa",

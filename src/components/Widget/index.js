@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import db from '../../../db.json';
 
 const Widget = styled.section`
   margin: 24px 0;
-  border: 2px solid ${db.theme.colors.secondary};
-  background-color: ${db.theme.colors.mainBg};
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
 
@@ -24,7 +23,7 @@ const Widget = styled.section`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
-  color: ${db.theme.colors.contrastTextLight};
+  color: ${({ theme }) => theme.colors.contrastTextLight};
   & > *:first-child {
     margin-top: 0;
   }
@@ -42,10 +41,27 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
-  color: ${db.theme.colors.contrastTextDark};
-  background-color: ${db.theme.colors.primary};
+  color: ${({ theme }) => theme.colors.contrastTextDark};
+  background-color: ${({ theme }) => theme.colors.primary};
   * {
     margin: 0;
+  }
+`;
+
+Widget.Topic = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastTextLight};
+  padding: 5px 8px 5px 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border: 2px solid ${({ theme }) => theme.colors.primary}30;
+  border-radius: 4px;
+  transition: .3s;
+  display: block;
+  opacity: .85;
+  &:hover, &:focus {
+    opacity: 1;
+    border: 2px solid ${({ theme }) => theme.colors.primary}75;
   }
 `;
 
