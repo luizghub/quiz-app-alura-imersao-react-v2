@@ -1,7 +1,7 @@
 {
   "bg": "https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   "imgDefault": "https://placehold.it/400x400",
-  "title": "Quiz JavaScript #AluraQuiz",
+  "title": "Quiz do Aprendizado",
   "description": "Um quiz rápido sobre o mundo do JavaScript",
   "questions": [
     {
@@ -36,11 +36,11 @@
     {
       "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
       "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
-      "answer": 1,
+      "answer": 2,
       "alternatives": [
         "JSONHttpRequest",
-        "XMLHttpRequest",
-        "fetch"
+        "fetch",
+        "XMLHttpRequest"
       ]
     }
   ],

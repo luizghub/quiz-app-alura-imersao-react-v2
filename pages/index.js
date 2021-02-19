@@ -1,5 +1,7 @@
 import React from 'react';
 
+import db from '../db.json';
+
 import PageHead from '../src/components/PageHead';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -17,7 +19,7 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Quiz do Aprendizado</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
             <Form />
@@ -28,7 +30,15 @@ export default function Home() {
             <h1>Quizes da Galera</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>texto provisório</p>
+            <ul>
+              {db.external.map((linkExterno) => (
+                <li>
+                  <Widget.Topic href={linkExterno}>
+                    {linkExterno}
+                  </Widget.Topic>
+                </li>
+              ))}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
